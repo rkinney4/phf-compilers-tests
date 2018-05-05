@@ -1,0 +1,11 @@
+PROGRAM simpleFactorial;
+    PROCEDURE factorial(n : INTEGER) : INTEGER;
+        BEGIN
+            IF n > 1 THEN
+                n := n * factorial(n - 1)
+            END
+        RETURN n
+    END factorial;
+BEGIN
+    WRITE factorial(2)
+END simpleFactorial.
